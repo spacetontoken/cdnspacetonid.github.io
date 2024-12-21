@@ -1,1 +1,1 @@
-
+document.forms["form"].addEventListener("input", function(e) { var input = this.querySelector("input[name=input]"); var not = input.value.match(/[^a-zA-Z0-9.+,$-]+/g); if (not) { not.forEach(function(text) { input.value = input.value.replace(text, "") }) } })
